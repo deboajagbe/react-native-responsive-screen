@@ -5,16 +5,20 @@
 * [Examples](#examples)
 * [How do I know it works for all devices ?](#example)
 * [License](#license)
+* [Pull Requests](#pull)
 
 # react-native-responsive-screen
 
+[![npm version](https://badge.fury.io/js/react-native-responsive-screen.svg)](https://www.npmjs.com/package/react-native-responsive-screen)
+[![npm](https://img.shields.io/npm/dm/react-native-responsive-screen.svg)]()
+
 <i>react-native-responsive-screen</i> is a small library that provides 2 simple methods so that React Native developers can code their UI elements fully responsive. No media queries needed.
 
-It also provides an optional third method for screen orienation detection and automatic rerendering according to new dimensions.
+It also provides an optional third method for screen orientation detection and automatic rerendering according to new dimensions.
 
 Give it a try and make your life simpler! 
 
-[![npm version](https://badge.fury.io/js/react-native-responsive-screen.svg)](https://www.npmjs.com/package/react-native-responsive-screen)
+Check out [this medium article](https://medium.com/react-native-training/build-responsive-react-native-views-for-any-device-and-support-orientation-change-1c8beba5bc23) to see the power of the library! 🚀
 
 <img src="https://cdn-images-1.medium.com/max/800/1*BWpx3uRPlWByahoXA6M-BQ.jpeg" />
 
@@ -31,6 +35,9 @@ Give it a try and make your life simpler!
 * The suggested approach is to start developing from larger screens (i.e. tablets). That way you are less prone to forget adding responsive values for all properties of type `number`. In any case, when your screen development is done, you should test it over a big range of different screens as shown below in the [How do I know it works for all devices ?](#example) section.
 * There are 2 more methods to use if you want to support responsiveness along with orientation change. These are `listenOrientationChange` and `removeOrientationListener`. To see how to use them, check example number 3.
 * You can use this package along with `styled-components`. To see how to do that, check example number 2.
+
+# Updates 🚀
+* `widthPercentageToDP` and `heightPercentageToDP` methods accept numeric values as well from version 1.2.1 onwards. That being said a width of 53% can now be written both `width: widthPercentageToDP('53%')` and `width: widthPercentageToDP(53)`.
 
 # Examples
 
@@ -92,3 +99,7 @@ The 4 blue tiles at the bottom half of the screen should take over 98% of the sc
 # License
 
 MIT
+
+# Pull
+
+Pull requests are welcome! Please make the PR to `development` branch though and not `master`. Thanks.
